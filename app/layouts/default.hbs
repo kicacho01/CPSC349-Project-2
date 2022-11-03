@@ -11,9 +11,18 @@
   {{#if currentUser}}
     <a href="/user/logout">Logout</a>
   {{else}}
-    <a class="nav__button" href="/user/signup">Sign up</a>
+  <div class="float-left ml-0.5">
+    <a class="nav__button inline-block mt-1 bg-cyan-500 hover:bg-cyan-600 text-white font-bold py-2 px-4 rounded" href="/user/signup">Sign up</a>
     &nbsp;
-    <a class="nav__button" href="/user/login">Log in</a>
+    <a class="nav__button inline-block mt-1 bg-cyan-500 hover:bg-cyan-600 text-white font-bold py-2 px-4 rounded" href="/user/login">Log in</a>
+  </div>
+
+  <div class="float-right mr-0.5">
+    <a class="nav__button inline-block mt-1 bg-cyan-500 hover:bg-cyan-600 text-white font-bold py-2 px-4 rounded" href="/user/index">Welcome</a>
+    &nbsp;
+    <a class="nav__button inline-block mt-1 bg-cyan-500 hover:bg-cyan-600 text-white font-bold py-2 px-4 rounded" href="/user/about-us">About Us</a>
+  </div>
+
   {{/if}}
   {{!-- Show errors --}}
   {{#if flashErrors }}
