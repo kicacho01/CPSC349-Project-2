@@ -8,8 +8,7 @@
     <title>Our App</title>
 </head>
 
-<body>
-  <h1>Welcome to my app!</h1>
+<body class="bg-gradient-to-br from-purple-700 to-amber-700 background">
   <ul>
     {{#if currentUser}}
       <li><a href="/{{currentUser.details.username}}">Go to your dashboard</a></li>
@@ -17,4 +16,183 @@
       <li><a href="/user/signup">Sign up for an account</a></li>
     {{/if}}
   </ul>
+
+  <div class="flex justify-evenly w-3/4 relative inset-12 space-x-14 items-center">
+
+    <div class="box-content hook-size p-4 bg-white bg-opacity-90 rounded-xl"> 
+      <p class="p-3 font-sans lg:text-4xl text-center text-xl">A Free, Online Diary!</p>
+      <hr class="border-4 border-purple-600 cursor-pointer hover:border-yellow-500 duration-500">
+      <p class="p-5 lg:text-3xl text-xl text-center">A free safespace to record precious and beloved <strong>experiences</strong>, <strong>interests</strong>, or anything else you <strong>desire.</strong></p>
+    </div>
+
+    <div class="mb-4 box-content w-2/5 bg-contain max-w-full h-auto border-yellow-600 border-4 rounded">
+        <img src="../assets/images/pexels-tirachard-kumtanom-733857.jpg" 
+          alt="An empty diary"
+          class="transition-shadow ease-in-out duration-300 shadow-none hover:shadow-xl"
+        >
+    </div>
+
+  </div>
+
+  <div class="flex justify-center items-center">
+    <div class="box-content w-2/4 h-16 bg-white bg-opacity-90 rounded-xl flex justify-center relative -bottom-24">
+      <p class="2xl:text-4xl xl:text-3xl lg:text-2xl md:text-xl text-center p-2">Join us and other users by signing up today!</p> 
+    </div>
+  </div>
+
+  <div class="flex justify-center relative -bottom-28 box-content">
+    <ul class="steps mt-12">
+      <li class="step step-primary text-yellow-50 text-2xl"><strong>Sign Up</strong></li>
+      <li class="step step-primary text-yellow-50 text-2xl"><strong>Start Using Our App</strong></li>
+      <li class="step text-yellow-50 text-2xl"><strong>That's It!</strong></li>
+    </ul>
+  </div>
+
+  <div class="container m-auto grid grid-cols-2 grid-rows-5 gap-6 relative -bottom-40">
+      
+    <div class="box-content w-11/12 h-12 bg-white bg-opacity-90 rounded-xl flex relative place-self-center justify-center items-center">
+      <h1 class="text-4xl p-6">Features</h1>
+    </div>
+
+    <div class="box-content w-11/12 h-12 bg-white bg-opacity-90 rounded-xl flex relative place-self-center justify-center items-center">
+      <h1 class="text-4xl p-6">Benefits</h1>
+    </div>
+
+    <div class="feature-benefits-cell">
+      <h1 class="feature-benefits-text">Create new entries with a date and text.</h1>
+    </div>
+
+    <div class="feature-benefits-cell">
+      <h1 class="feature-benefits-text">Free to use, and easy to sign up!</h1>
+    </div>
+
+    <div class="feature-benefits-cell">
+      <h1 class="feature-benefits-text">Show the date for each entry.</h1>
+    </div>
+
+    <div class="feature-benefits-cell">
+      <h1 class="feature-benefits-text">Set up goals to fulfill in the future or vent your anger out here!</h1>
+    </div>
+
+    <div class="feature-benefits-cell">
+      <h1 class="feature-benefits-text">Show the most recent entries at the top first.</h1>
+    </div>
+
+    <div class="feature-benefits-cell">
+      <h1 class="feature-benefits-text">Calm your stress down by creating a diary entry. Putting things into words helps and can bring about more positive thought.</h1>
+    </div>
+
+    <div class="feature-benefits-cell">
+      <h1 class="feature-benefits-text">Attach pictures to go along with your entries.</h1>
+    </div>
+
+    <div class="feature-benefits-cell">
+      <h1 class="feature-benefits-text">Have a convoluted problem or issue that needs solving? Break down that problem into small steps to remember it more easily and to simplify things.</h1>
+    </div>
+
+  </div>
+
+  <br>
+  
+  <div class="flex justify-center relative -bottom-56">
+    <a href="/user/login">
+      <button class="font-bold w-48 px-10 py-2 bg-cyan-500 text-white rounded-md hover:bg-cyan-600 hover:drop-shadow-md duration-300 ease-in text-lg"> Get started today! </button>
+    </a>
+  </div> 
+
+  <br>
+  <br>
+
+  <div class="flex justify-center relative -bottom-44">
+    <div class="box-content w-2/4 h-14 bg-white bg-opacity-90 rounded-xl flex justify-center relative -bottom-24 items-center">
+      <p class="xl:text-4xl lg:ext-3xl text-xl text-center">Some thoughts from our users:</p> 
+    </div>
+  </div>
+
+  <div class="container m-auto grid grid-cols-1 grid-rows-3 gap-y-8 relative justify-center -bottom-56">
+    <div class="box-content w-5/6 h-24 bg-pink-200 bg-opacity-90 rounded-xl flex relative -bottom-24 items-center -right-14">
+      <p class="2xl:text-3xl xl:text-2xl lg:ext-xl text-base text-center p-8"><strong>User 1</strong>: <q>Overall, this is a great app to vent out my frustrations. Also, the ability to add pictures is a nice touch!</q></p> 
+    </div>
+
+    <div class="box-content w-5/6 h-24 bg-pink-200 bg-opacity-90 rounded-xl flex relative justify-center -bottom-24 items-center -right-14">
+      <p class="2xl:text-3xl xl:text-2xl lg:ext-xl text-base text-center p-8"><strong>User 2</strong>: <q>This app helps with my fuzzy memory. It makes it easy to organize my thoughts and I also love how the most recent entries show up first!</q></p> 
+    </div>
+
+    <div class="box-content w-5/6 h-24 bg-pink-200 bg-opacity-90 rounded-xl flex relative -bottom-24 items-center -right-14">
+      <p class="2xl:text-3xl xl:text-2xl lg:ext-xl text-base text-center p-8"><strong>User 3</strong>: <q>Creating new entries can be done effortlessly. The user interface is aesthetically pleasing too!</q></p> 
+    </div>
+  </div>
+
+  <div class="box-content w-3/4 sm:h-20 h-28 bg-white bg-opacity-90 rounded-xl flex relative items-center lg:-right-48 md:-right-20 sm:-right-48 -right-16 -bottom-96 justify-center">
+    <p class="xl:text-2xl lg:text-xl text-base p-8 text-center leading-loose">Have any <strong class="underline underline-offset-8">questions</strong>? Contact Us at: 
+      <strong class="underline underline-offset-8 text-blue-600">someemail@gmail.com</strong> or through <strong class="underline underline-offset-8">(012)-3456-7891</strong>.</p> 
+  </div>
+
+  <div class="box-content w-1/2 h-16 bg-white bg-opacity-90 rounded-xl flex relative items-center FAQ-prompt justify-center">
+    <p class="2xl:text-3xl xl:text-2xl lg:text-xl text-base p-8 text-center"> Frequently Asked Questions </p> 
+  </div>
+
+  <div class="grid justify-center gap-12 relative bottom-FAQs ">
+    <div class="collapse border rounded-box border-base-300 collapse-plus bg-white opacity-90">
+      <input type="checkbox"> 
+      <div class="collapse-title text-2xl font-medium bg-plus">
+        Just how private is my diary? Can other people see it?
+      </div> 
+      <div class="collapse-content text-xl"> 
+        <hr class="border-2 border-purple-800 cursor-pointer hover:border-red-500 duration-500">
+        <p class="p-3">No one else can see your diary. When you log in after creating an account, you get a diary that only you can see and you alone!</p>
+      </div>
+    </div> 
+
+    <div class="collapse border rounded-box border-base-300 collapse-plus bg-white opacity-90">
+      <input type="checkbox"> 
+      <div class="collapse-title text-2xl font-medium">
+        How much do I need to pay to get access to my own online diary?
+      </div> 
+      <div class="collapse-content text-xl"> 
+        <hr class="border-2 border-purple-800 cursor-pointer hover:border-red-500 duration-500">
+        <p class="p-3">Nothing at all! There are no payments required or subscriptions. It is completely free and all you have to do is sign up.</p>
+      </div>
+    </div> 
+
+    <div class="collapse border rounded-box border-base-300 collapse-plus bg-white opacity-90">
+      <input type="checkbox"> 
+      <div class="collapse-title text-2xl font-medium">
+        Why should I use this application instead of just buying a traditional diary and a pencil to record my experiences?
+      </div> 
+      <div class="collapse-content text-xl"> 
+        <hr class="border-2 border-purple-800 cursor-pointer hover:border-red-500 duration-500">
+        <p class="p-3">You are capable of inserting photos which can give entries more depth and you can add emojis. Also, unlike a physical diary, this app is completely free.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="flex relative justify-center make-it-happen-image">
+    <div class="mb-4 box-content h-1/3 w-1/3 bg-contain border-yellow-600 border-4 rounded">
+        <img class ="h-auto transition-shadow ease-in-out duration-300 shadow-none hover:shadow-xl" 
+        src="../assets/images/pexels-bich-tran-669986.jpg" 
+        alt="A Diary"
+        />
+    </div>
+  </div>
+
+  <div class="stats shadow flex relative w-5/12 justify-center stat">
+    <div class="stat place-items-center">
+      <div class="stat-title">Entries Created</div>
+      <div class="stat-value">123K</div>
+      <div class="stat-desc text-base">In 2022 Alone!</div>
+    </div>
+    <div class="stat place-items-center">
+      <div class="stat-title">Users</div>
+      <div class="stat-value text-secondary">50,000</div>
+      <div class="stat-desc text-secondary text-base">↗︎ 500 (2%)</div>
+    </div>
+    <div class="stat place-items-center">
+      <div class="stat-title">New Registers</div>
+      <div class="stat-value">2,500</div>
+      <div class="stat-desc text-base">↗︎ 500 (15%)</div>
+    </div>    
+    </div>
+
+  </div>
 </body>

@@ -1,3 +1,42 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.FAQ-prompt {
+    bottom: -30rem;
+    right: -30rem;
+}
+
+.background {
+    height: 260rem;
+}
+
+.bottom-FAQs {
+    bottom: -36rem;
+}
+
+.FAQ-width {
+    width: 80rem;
+}
+
+.stat {
+    bottom: -42rem;
+    right: -33rem;
+}
+
+.hook-size {
+    width: 28rem;
+    height: 20rem;
+}
+
+.make-it-happen-image {
+    bottom: -40rem;
+}
+
+.feature-benefits-cell {
+    @apply box-content w-11/12 xl:h-32 sm:h-36 h-40  bg-yellow-300 bg-opacity-90 rounded-xl flex relative place-self-center justify-center items-center;
+}
+
+.feature-benefits-text {
+    @apply xl:text-2xl lg:text-xl md:text-lg text-sm p-6
+}
