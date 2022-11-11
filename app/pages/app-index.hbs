@@ -14,16 +14,12 @@
              <div class="flex flex-center m-4">
                     <div class="p-4 w-full">
                         <div class="h-full bg-gray-200 bg-opacity-75 px-8 pt-16 pb-24 rounded-lg overflow-hidden text-center relative">
-                            <h1 class="title-font sm:text-2xl text-xl font-medium text-black mb-3">Name</h1>
+                            <h1 class="title-font sm:text-2xl text-xl font-medium text-black mb-3">{{currentUser.details.username}}</h1>
                             <ul>
-                                <li> {{currentUser.details.username}} </li>
                                 <li>{{currentUser.details.email}}</li>
-                                
-
                                 {{!-- {{#each currentUser}}
                                 {{@key}}: {{this}}
                                 {{/each}}  --}}
-                               
                                 <br>
                                 <p><a class= "text-blue-500" href="">link</a></p>
                             </ul>
