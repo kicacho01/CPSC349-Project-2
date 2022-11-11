@@ -1,15 +1,37 @@
 <!doctype html>
 <html>
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Our App</title>
 </head>
-<body>
-  <h1 class="text-3xl font-bold underline text-blue-700">
-    Hello world!
-  </h1>
+
+<body class="bg-gradient-to-br from-purple-700 to-yellow-300">
+    <div class="w-screen h-screen flex justify-center items-center">
+        <div class="container px-5 py-24 mx-auto">
+             <div class="flex flex-center m-4">
+                    <div class="p-4 w-full">
+                        <div class="h-full bg-gray-200 bg-opacity-75 px-8 pt-16 pb-24 rounded-lg overflow-hidden text-center relative">
+                            <h1 class="title-font sm:text-2xl text-xl font-medium text-black mb-3">{{currentUser.details.username}}</h1>
+                            <ul>
+                                <li>{{currentUser.details.email}}</li>
+                                {{!-- {{#each currentUser}}
+                                {{@key}}: {{this}}
+                                {{/each}}  --}}
+                                <br>
+                                <p><a class= "text-blue-500" href="">link</a></p>
+                            </ul>
+                         
+                        </div>
+                   </div>
+
+             </div>
+
+        </div>
+                
+    </div>
+
 </body>
-<div>[[ Dynamic Remake code goes here]]</div>
-<br><br>
-<a href="https://docs.remaketheweb.com/a-simple-example-app/">Try a simple todo app</a>
-</html>
+
