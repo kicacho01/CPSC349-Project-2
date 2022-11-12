@@ -9,29 +9,117 @@
 </head>
 
 <body class="bg-gradient-to-br from-purple-700 to-yellow-300">
-    <div class="w-screen h-screen flex justify-center items-center">
-        <div class="container px-5 py-24 mx-auto">
-             <div class="flex flex-center m-4">
-                    <div class="p-4 w-full">
-                        <div class="h-full bg-gray-200 bg-opacity-75 px-8 pt-16 pb-24 rounded-lg overflow-hidden text-center relative">
-                            <h1 class="title-font sm:text-2xl text-xl font-medium text-black mb-3">{{currentUser.details.username}}</h1>
-                            <ul>
-                                <li>{{currentUser.details.email}}</li>
-                                {{!-- {{#each currentUser}}
-                                {{@key}}: {{this}}
-                                {{/each}}  --}}
-                                <br>
-                                <p><a class= "text-blue-500" href="">link</a></p>
-                            </ul>
-                         
-                        </div>
-                   </div>
 
-             </div>
+    <div class="w-screen h-screen flex justify-start items-start">
 
-        </div>
-                
-    </div>
+    
+     <div class="flex justify-evenly w-1/6 relative inset-20 space-x-14 items-center">
+        
+    <div class="box-content h-10 w-50 hook-size p-10 bg-purple-200 bg-opacity-90 rounded-xl mr-10 "> 
+    <hr class="cursor-pointer hover:border-white-500 duration-500">
+
+    
+    <h1 class="title-font sm:text-2xl text-xl font-medium text-black mb-3">{{currentUser.details.username}}</h1>
+        <ul>
+             <li>{{currentUser.details.email}}</li>
+                {{!-- {{#each currentUser}}
+                {{@key}}: {{this}}
+                {{/each}}  --}}
+              <br>             
+        </ul>
+   
+    </div>   
+ </div>
+
+
+
+
+ <div class="flex justify-evenly w-2/4 relative inset-20 space-x-14 items-center">
+
+    <div class="box-content w-100 p-4 bg-white bg-opacity-90 space-y-20 rounded-xl ml-6 "> 
+     
+            <div class="flex flex-col space-y-2">
+              <input class="w-45 px-3 py-2 rounded-md border border-slate-400 text-black bg-purple-200" type="title" name="title" placeholder="title" required>
+            </div>
+
+               <div class="flex flex-col space-y-2">
+              <input class="w-30 px-3 py-1 rounded-md border border-slate-400 text-black bg-purple-200" type="date" name="date" placeholder="date" required>
+            </div>
+
+             
+              <div class="flex flex-col space-y-2">
+              <input class="p-5 lg:text-3xl text-xl w-45 px-3 py-20 rounded-md border border-slate-400 text-black text-start bg-purple-200" type="text" name="text" placeholder="text" required>
+
+            </div>
+            <button class="w-full px-10 py-2 bg-purple-500 text-white rounded-md hover:bg-purple-600 hover:drop-shadow-md duration-300 ease-in">New Entry</button>
+
+    
+    </div>       
+</div>
+
+<div class="w-screen h-screen flex justify-start items-start">
+
+     <div class="flex justify-evenly w-3/4 relative inset-20 space-x-14 items-center">
+       
+   
+    <div class="box-content h-30 w-50 p-10 bg-purple-200 bg-opacity-100 rounded-xl ml-6"> 
+    <div class="text-black text-xl ml-20">Entries</div> 
+       
+    <hr class="cursor-pointern hover:border-white-500 duration-500">
+
+   
+    <ol class="list-decimal text-black ml-0 whitespace nora ">
+
+     <button class="w-full px-10 py-2 bg-purple-500 text-white rounded-md hover:bg-purple-600 hover:drop-shadow-md duration-300 ease-in my-4">
+
+        
+          Going to the beach 11/09/2022
+      
+          </button>
+
+      <button class="w-full px-10 py-2 bg-purple-500 text-white rounded-md hover:bg-purple-600 hover:drop-shadow-md duration-300 ease-in my-4">
+       
+          What a day 11/04/2022
+      
+        </button>
+
+       <button class="w-full px-10 py-2 bg-purple-500 text-white rounded-md hover:bg-purple-600 hover:drop-shadow-md duration-300 ease-in my-4">
+
+     
+          School Lately 10/28/2022
+     
+        </button>
+        
+         <button class="w-full px-10 py-2 bg-purple-500 text-white rounded-md hover:bg-purple-600 hover:drop-shadow-md duration-300 ease-in my-4">
+     
+          Rainy days... 10/10/2022
+     
+        </button>
+
+         <button class="w-full px-10 py-2 bg-purple-500 text-white rounded-md hover:bg-purple-600 hover:drop-shadow-md duration-300 ease-in my-4">
+
+    
+          Love life 9/21/2022
+       
+        </button>
+
+         <button class="w-full px-10 py-2 bg-purple-500 text-white rounded-md hover:bg-purple-600 hover:drop-shadow-md duration-300 ease-in my-4">
+
+       
+          New puppy! 8/20/2022
+     
+        </button>
+  
+        </ol> 
+      </div>
+  
+
+ </div>
+
+  
+
+
+
 
 </body>
 
